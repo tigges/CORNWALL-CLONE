@@ -10,13 +10,21 @@ Block theme for Cornwall Dry Cleaners on Haven Lane, Ealing. Activating it (or p
 Name, address, phone, services and FAQ live in inc/business.php. Hours, special
 days, the notice, rating, review links and analytics: WordPress → Shop details.
 
-== Cloudways git pull ==
+== Local preview ==
 
-Pull branch `main` into `public_html/` (see CLOUDWAYS.md), then purge Breeze
-and Varnish. Bump `Version` in style.css on every theme change.
+This repository is an independent theme project; it is not configured to
+deploy to the original site or any Cloudways app. Preview it in a disposable
+local WordPress installation: copy the `cornwall-dry-cleaners` folder into
+`wp-content/themes/`, then activate **Cornwall Dry Cleaners** under
+Appearance → Themes.
+
+Use a disposable local site because activating the theme can replace the
+WordPress homepage and update site settings. See the repository README for
+development notes.
 
 == Upload zip ==
 
 1. Zip the `cornwall-dry-cleaners` folder.
-2. Appearance → Themes → Add New → Upload Theme.
+2. In a disposable local WordPress site, go to Appearance → Themes → Add New
+   → Upload Theme.
 3. Activate **Cornwall Dry Cleaners**. The homepage is replaced automatically.
