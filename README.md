@@ -23,6 +23,14 @@ valuable WordPress site just to preview the theme.
 The theme's [`screenshot.png`](wp-content/themes/cornwall-dry-cleaners/screenshot.png)
 is a static preview; it does not require WordPress.
 
+## Online snapshot
+
+The root [`index.html`](index.html) is a static snapshot for GitHub Pages at
+<https://tigges.github.io/CORNWALL-CLONE/>. It reuses the theme's CSS and image
+assets, but is not a running WordPress site: edits in WordPress, live opening
+status, prices, review redirects/tracking, and legal pages are not available.
+Update the snapshot separately when the theme changes.
+
 ## Development
 
 - Theme source: [`wp-content/themes/cornwall-dry-cleaners/`](wp-content/themes/cornwall-dry-cleaners/)
