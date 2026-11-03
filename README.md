@@ -31,6 +31,25 @@ assets, but is not a running WordPress site: edits in WordPress, live opening
 status, prices, review redirects/tracking, and legal pages are not available.
 Update the snapshot separately when the theme changes.
 
+## Development environment
+
+Two helper scripts live in [`scripts/`](scripts/):
+
+- **`scripts/setup.sh`** sets up a cloud or container environment. It installs
+  `php-cli`, `php-xml`, `php-mbstring`, `php-curl` and `php-zip` with `apt`,
+  and installs the WP-CLI phar as `/usr/local/bin/wp` if it is missing. It
+  needs root or `sudo` and is safe to run again. To use it as a cloud
+  environment's setup script, call it with the repository path, for example
+  `bash /path/to/CORNWALL-CLONE/scripts/setup.sh`.
+- **`scripts/lint-php.sh`** runs `php -l` on every `.php` file under
+  `wp-content/themes/cornwall-dry-cleaners`. It stops and exits non-zero at the
+  first syntax error, and works from any directory.
+
+```bash
+scripts/setup.sh
+scripts/lint-php.sh
+```
+
 ## Development
 
 - Theme source: [`wp-content/themes/cornwall-dry-cleaners/`](wp-content/themes/cornwall-dry-cleaners/)
